@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <!-- Board Colors -->
+    <color name="red">#E63A3F</color>
+    <color name="blue">#708CFD</color>
+    <color name="green">#359C35</color>
+    <color name="yellow">#FFCE2C</color>
+    <color name="orange">#FF6F43</color>
+    <color name="purple">#A13CB1</color>
+    <color name="cyan">#38FFFF</color>
+    <color name="pink">#f2739d</color>
+
+    <!-- Board Colors Material -->
+    <color name="red_material">#c75d5d</color>
+    <color name="blue_material">#448AFF</color>
+    <color name="green_material">#76c2af</color>
+    <color name="yellow_material">#f5cf89</color>
+    <color name="purple_material">#7E57C2</color>
+    <color name="orange_material">#de975d</color>
+
+    <array name="boardColorScheme">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/yellow</item>
+        <item>@color/purple</item>
+        <item>@color/orange</item>
+    </array>
+
+    <array name="boardColorSchemeMaterial">
+        <item>@color/red_material</item>
+        <item>@color/blue_material</item>
+        <item>@color/green_material</item>
+        <item>@color/yellow_material</item>
+        <item>@color/purple_material</item>
+        <item>@color/orange_material</item>
+    </array>
+
+</resources>

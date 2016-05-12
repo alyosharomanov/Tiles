@@ -1,0 +1,38 @@
+<resources>
+<string name="app_name">Tiles</string>
+
+<!-- End Game Dialog -->
+<string name="endgame_win_title">Excellent</string>
+<string name="endgame_win_text" formatted="false">You filled the board in %d moves</string>
+<string name="endgame_old_highscore_text" formatted="false">Your best is %d moves</string>
+<string name="endgame_new_highscore_text" formatted="false">New best: %d moves</string>
+<string name="endgame_lose_title">Game Over</string>
+<string name="endgame_new_game_button">Play Again?</string>
+<string name="endgame_replay">Replay</string>
+<string name="banner_ad_unit_id">ca-app-pub-7139394104024144/7837853319<!--ca-app-pub-3940256099942544/6300978111--></string>
+
+<!--Settings Activity-->
+<string name="settings_settings">Settings</string>
+<string name="settings_num_colors">Number of Colors</string>
+<string name="settings_board_size">Board Size</string>
+<string name="settings_play_button">Play</string>
+
+<!--Info activity-->
+<string name="info_instructions_title">Gameplay</string>
+    <string name="info_instructions">
+        You start in the upper left hand corner of the board. You then tap the colored buttons along
+        the bottom of the screen to "fill" adjacent tiles with color, and thus make them yours.The
+        aim of the game is to fill the entire board with one color in less than the maximum number of
+        allowed moves.
+    </string>
+<string name="info_credits_title">Credits</string>
+    <string name="info_credits">
+        Alyosha Romanov and Sirisha Munukutla
+    </string>
+<string name="info_back">Back</string>
+</resources>
+
+<!--Social activity-->
+
+<!--Highscore activity-->
+
