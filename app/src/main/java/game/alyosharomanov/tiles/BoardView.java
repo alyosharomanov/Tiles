@@ -11,7 +11,7 @@ import android.view.View;
  * Prints the board in the main Activity
  */
 public class BoardView extends View {
-    private Game drawGame;
+    private GameLogic drawGame;
     private int boardSize;
     private int cellSize;
     private int xOffset;
@@ -81,7 +81,7 @@ public class BoardView extends View {
      *
      * @param game to be drawn
      */
-    public void draw(Game game) {
+    public void draw(GameLogic game) {
         drawGame = game;
         invalidate();
         return;

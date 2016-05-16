@@ -15,7 +15,7 @@ import android.widget.RadioGroup;
 /**
  * Activity responsible for game and application settings
  */
-public class Settings extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
     CheckBox materialCheckBox;
     int[] boardSizeChoices, numColorsChoices;
     private int selectedBoardSize, selectedNumColors;
@@ -49,7 +49,7 @@ public class Settings extends AppCompatActivity {
             currRadioButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Settings.this.setSelectedBoardSize(bs);
+                    SettingsActivity.this.setSelectedBoardSize(bs);
                 }
             });
         }
@@ -71,7 +71,7 @@ public class Settings extends AppCompatActivity {
             currRadioButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Settings.this.setSelectedNumColors(nc);
+                    SettingsActivity.this.setSelectedNumColors(nc);
                 }
             });
         }

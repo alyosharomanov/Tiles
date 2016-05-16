@@ -3,7 +3,7 @@ package game.alyosharomanov.tiles;
 /**
  * A class that represents one cell of the BoardView
  */
-public class Cell {
+public class CellLogic {
     private boolean isProcessed = false;
     private int color;
 
@@ -13,7 +13,7 @@ public class Cell {
      *
      * @param color for the cell to be
      */
-    public Cell(int color) {
+    public CellLogic(int color) {
         this.color = color;
     }
 

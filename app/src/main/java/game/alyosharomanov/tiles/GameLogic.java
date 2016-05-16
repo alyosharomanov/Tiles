@@ -5,8 +5,8 @@ import java.util.Random;
 /**
  * Main game component, with all the logic, and back-end of the game
  */
-public class Game {
-    private Cell board[][];
+public class GameLogic {
+    private CellLogic board[][];
     private int boardSize;
     private int numColors;
     private int steps = 0;
@@ -24,7 +24,7 @@ public class Game {
      * @param boardSize size of the board
      * @param numColors number of total possible colors
      */
-    public Game(int boardSize, int numColors) {
+    public GameLogic(int boardSize, int numColors) {
         this.boardSize = boardSize;
         this.numColors = numColors;
         this.seed = generateRandomSeed();
@@ -88,11 +88,11 @@ public class Game {
      * using double embedded for loop and seed
      */
     private void initializeBoard() {
-        board = new Cell[boardSize][boardSize];
+        board = new CellLogic[boardSize][boardSize];
         Random r = new Random(seed.hashCode());
         for (int y = 0; y < boardSize; y++) {
             for (int x = 0; x < boardSize; x++) {
-                board[y][x] = new Cell(r.nextInt(numColors));
+                board[y][x] = new CellLogic(r.nextInt(numColors));
             }
         }
         board[0][0].setIsProcessed();

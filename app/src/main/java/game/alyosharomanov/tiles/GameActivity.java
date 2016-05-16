@@ -21,7 +21,7 @@ public class GameActivity extends AppCompatActivity implements EndGameDialog.End
 
     private final int SETTINGS_INT = 1;
 
-    private Game game;
+    private GameLogic game;
     private SharedPreferences sp;
     private SharedPreferences.Editor spEditor;
 
@@ -61,7 +61,7 @@ public class GameActivity extends AppCompatActivity implements EndGameDialog.End
         settingsButton.setOnClickListener(new View.OnClickListener() {
                                               @Override
                                               public void onClick(View v) {
-                                                  Intent launchSettingsIntent = new Intent(GameActivity.this, Settings.class);
+                                                  Intent launchSettingsIntent = new Intent(GameActivity.this, SettingsActivity.class);
                                                   startActivityForResult(launchSettingsIntent, SETTINGS_INT);
                                               }
                                           }
@@ -155,7 +155,7 @@ public class GameActivity extends AppCompatActivity implements EndGameDialog.End
      * Starts a new game with current Settings
      */
     private void newGame() {
-        game = new Game(getBoardSize(), getNumColors());
+        game = new GameLogic(getBoardSize(), getNumColors());
         gameIsFinished = false;
         prevColor = game.getColor(0,0);
 
