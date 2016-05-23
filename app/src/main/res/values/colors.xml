@@ -38,4 +38,9 @@
         <item>@color/orange_material</item>
     </array>
 
+    <color name="grey1">#424242</color>
+    <color name="grey2">#616161</color>
+    <color name="grey3">#757575</color>
+
+
 </resources>

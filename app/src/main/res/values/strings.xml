@@ -30,9 +30,13 @@
         Alyosha Romanov and Sirisha Munukutla
     </string>
 <string name="info_back">Back</string>
-</resources>
 
 <!--Social activity-->
 
 <!--Highscore activity-->
+<string name="highscores">Your Highscores</string>
 
+
+
+
+</resources>

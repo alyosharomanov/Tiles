@@ -49,27 +49,17 @@ public class EndGameDialog extends DialogFragment{
         final AlertDialog dialog = builder.create();
         dialog.setCanceledOnTouchOutside(false);
 
-        // Set up the dialog's title
-        TextView endgameText = (TextView) layout.findViewById(R.id.endGameTitle);
-        if (gameWon) {
-            endgameText.setText(getString(R.string.endgame_win_title));
-        } else {
-            endgameText.setText(getString(R.string.endgame_lose_title));
-        }
-
         // Set up dialog's other text views
         TextView endgameTextView = (TextView) layout.findViewById(R.id.endGameText);
         TextView highScoreTextView = (TextView) layout.findViewById(R.id.highScoreText);
         ImageView highScoreMedalImageView = (ImageView) layout.findViewById(R.id.highScoreMedalImageView);
 
-        //Initialize prefernces
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
         HighScoreManager highScoreManager = new HighScoreManager(sp);
 
         int boardSize = sp.getInt("board_size", -1);
         int numColors = sp.getInt("num_colors", -1);
 
-        //Actions carried out by win/loss
         if (gameWon) {
             String stepsString = String.format(getString(R.string.endgame_win_text),
                     steps);
@@ -102,11 +92,11 @@ public class EndGameDialog extends DialogFragment{
         // Set up the new game button
         Button newGameButton = (Button) layout.findViewById(R.id.newGameButton);
         newGameButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.onNewGameClick();
-                dismiss();
-            }
+                                             @Override
+                                             public void onClick(View v) {
+                                                 listener.onNewGameClick();
+                                                 dismiss();
+                                             }
         });
 
         //adview

@@ -62,6 +62,7 @@ public class HighScoreManager {
      * @param numColors number of colors
      * @param steps number of steps
      */
+
     public void setHighScore(int boardSize, int numColors, int steps) {
         SharedPreferences.Editor editor = sp.edit();
         editor.putInt(getString(boardSize, numColors), steps);
@@ -76,6 +77,6 @@ public class HighScoreManager {
      * @return highscore as a String
      */
     private String getString(int boardSize, int numColors) {
-        return String.format("highscore_%1$d_%1$d", boardSize, numColors);
+        return String.format("highscore_%d_%d", boardSize, numColors);
     }
 }
